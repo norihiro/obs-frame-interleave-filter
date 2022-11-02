@@ -29,7 +29,7 @@ extern const struct obs_source_info frame_interleave_filter_info;
 bool obs_module_load(void)
 {
 	obs_register_source(&frame_interleave_filter_info);
-	blog(LOG_INFO, "plugin loaded successfully (version %s)", PLUGIN_VERSION);
+	blog(LOG_INFO, "plugin loaded (version %s)", PLUGIN_VERSION);
 	return true;
 }
 
