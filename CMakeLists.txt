@@ -11,6 +11,7 @@ set(PLUGIN_AUTHOR "Norihiro Kamae")
 set(MACOS_BUNDLEID "net.nagater.obs-frame-interleave-filter")
 set(MACOS_PACKAGE_UUID "8FE719C3-6009-495D-AB7A-4DEC4D4DAD8F")
 set(MACOS_INSTALLER_UUID "3FE71FAC-65AA-4078-90E3-E417E2AEF8DA")
+set(PLUGIN_URL "https://obsproject.com/forum/resources/obs-frame-interleave-filter.1618/")
 set(ID_PREFIX "net.nagater.obs-frame-interleave-filter.")
 
 # Replace `me@contoso.com` with the maintainer email address you want to put in Linux packages
