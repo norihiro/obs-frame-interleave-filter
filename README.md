@@ -9,6 +9,17 @@ every video frame is transferred to the GPU.
 If you have multiple video sources, a poor system might not have enough power to process all frames.
 In such cases, this filter will be helpful to reduce the frames to be transferred if the video source is not shown in the program.
 
+An example usage case is
+- Studio Mode is enabled, and
+- You have multiple asynchronous-video sources (such as capture cards).
+
+The expected effect is the shorter rendering time or less number of missed frames.
+
+A figure below shows a concept of how the frames will be processed by this filter.
+While the source is not live on the program, some frames are discarded.
+While the source is live, every frames will pass through this filter, ie. this filter do nothing.
+<img src='doc/concept.png'/>
+
 ## Properties
 
 ### Interleave time
