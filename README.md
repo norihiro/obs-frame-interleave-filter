@@ -1,4 +1,4 @@
-# OBS Frame Interleave Filter Plugin
+# Frame Interleave Filter Plugin for OBS Studio
 
 ## Introduction
 
