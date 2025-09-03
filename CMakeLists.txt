@@ -73,6 +73,10 @@ if(APPLE)
 	set(MACOSX_PLUGIN_SHORT_VERSION_STRING "1")
 endif()
 
+if(CMAKE_C_COMPILER_ID STREQUAL GNU)
+	target_compile_options(${PROJECT_NAME} PRIVATE -fanalyzer)
+endif()
+
 setup_plugin_target(${CMAKE_PROJECT_NAME})
 
 configure_file(installer/installer-macOS.pkgproj.in installer-macOS.generated.pkgproj)
